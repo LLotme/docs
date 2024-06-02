@@ -14,7 +14,7 @@
   },
   "homepage": "https://docs.docker.com/",
   "dependencies": {
-    "@alpinejs/collapse": "^3.13.5",
+    "@alpinejs/collapse": "^3.13.10",
     "@alpinejs/persist": "^3.13.5",
     "@alpinejs/focus": "^3.13.7",
     "@floating-ui/dom": "^1.6.3",

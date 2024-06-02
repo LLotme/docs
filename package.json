@@ -18,7 +18,7 @@
     "@alpinejs/persist": "^3.13.5",
     "@alpinejs/focus": "^3.13.7",
     "@floating-ui/dom": "^1.6.3",
-    "@material-symbols/svg-400": "^0.14.6",
+    "@material-symbols/svg-400": "^0.17.4",
     "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "@tailwindcss/typography": "^0.5.10",
     "alpinejs": "^3.13.5",

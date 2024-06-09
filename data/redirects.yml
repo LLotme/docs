@@ -619,7 +619,7 @@
   - /go/scout-policy/
 "/scout/policy/configure/":
   - /go/scout-configure-policy/
-"/develop/develop-images/guidelines/#pin-base-image-versions":
+"/build/building/best-practices/#pin-base-image-versions":
   - /go/base-image-pinning/
 # integrations
 "/scout/integrations/ci/gha/":
@@ -682,6 +682,10 @@
   - /go/build-additional-context/
 "/config/labels-custom-metadata/":
   - /go/labels/
+"/build/ci/github-actions/build-summary/":
+  - /go/build-summary/
+"/desktop/use-desktop/builds/#import-builds":
+  - /go/builds-import/
 
 # Build links (external)
 "https://www.docker.com/build-early-access-program/?utm_campaign=onboard-30-customer-zero&utm_medium=in-product-ad&utm_source=desktop_v4":
@@ -696,9 +700,9 @@
   - /go/filter/
 
 # Docker Init
-"/develop/develop-images/instructions/#user":
+"/build/building/best-practices/#user":
   - /go/dockerfile-user-best-practices/
-"/develop/develop-images/instructions/#apt-get":
+"/build/building/best-practices/#apt-get":
   - /go/dockerfile-aptget-best-practices/
 "/build/building/context/#dockerignore-files":
   - /go/build-context-dockerignore/

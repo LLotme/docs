@@ -188,6 +188,8 @@ containers. Alternatively, you can opt not to share it by selecting **Cancel**.
 
 ### Proxies
 
+Docker Desktop on Windows supports the use of HTTP/HTTPS and [SOCKS5 proxies](../networking.md#socks5-proxy-support).
+
 HTTP/HTTPS proxies can be used when:
 
 - Signing in to Docker
@@ -196,7 +198,7 @@ HTTP/HTTPS proxies can be used when:
 - Containers interact with the external network
 - Scanning images
 
-If the host uses a HTTP/HTTPS proxy configuration (static or via Proxy Auto-Configuration), Docker Desktop reads
+If the host uses a HTTP/HTTPS proxy configuration (static or via Proxy Auto-Configuration (PAC)), Docker Desktop reads
 this configuration
 and automatically uses these settings for signing into Docker, for pulling and pushing images, and for
 container Internet access. 
@@ -212,6 +214,9 @@ The HTTPS proxy settings used for scanning images are set using the `HTTPS_PROXY
 If you are running Windows containers in Docker, you can allow the Windows Docker daemon to use Docker Desktop's internal proxy, with the **Use proxy for Windows Docker daemon** setting.
 This is useful when a corporate proxy that requires authentication is manually configured or set at the system level. If you are an admin for your organization and have a Docker Business subscription, you can control this setting with [Settings management](../hardened-desktop/settings-management/configure.md) using the `windowsDockerdPort` parameter.
 
+> **Note**
+>
+> If you are using a PAC file hosted on a web server, make sure to add the MIME type `application/x-ns-proxy-autoconfig` for the `.pac` file extension on the server or website. Without this configuration, the PAC file may not be parsed correctly.
 
 #### Proxy authentication
 
@@ -228,6 +233,10 @@ It's recommended that you use an `https://` URL for HTTP/HTTPS proxies to protec
 Kerberos and NTLM proxy authentication are available for Business subscribers with Docker Desktop version 4.30 and later. No additional configuration is needed beyond specifying the proxy IP address and port.
 
 Developers are no longer interrupted by prompts for proxy credentials as authentication is centralized. This also reduces the risk of account lockouts due to incorrect sign in attempts.
+
+If your proxy offers multiple authentication schemes in 407(Proxy Authentication Required) response, Docker Desktop selects the strongest authentication scheme (Kerberos, NTLM, Basic, in that order). However, if your Kerberos/NTLM environment is not properly configured, Docker Desktop may fail to authenticate with the proxy, as it will attempt to use the strongest scheme. 
+
+To temporarily resolve this issue until your Kerberos/NTLM environment is fixed, you can fallback to the Basic authentication scheme by setting `proxyEnableKerberosNTLM` to `false` in the `settings.json` file located in the `%APPDATA%/Docker/` directory. Quit Docker Desktop and then start it again to effect this change. The `proxyEnableKerberosNTLM` setting is available in Docker Desktop version 4.31 and later.
 
 > **Note**
 >

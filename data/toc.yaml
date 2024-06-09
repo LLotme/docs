@@ -148,6 +148,18 @@ Guides:
       path: /language/dotnet/configure-ci-cd/
     - title: "Test your deployment"
       path: /language/dotnet/deploy/
+  - sectiontitle: C++
+    section:
+    - title: "Overview"
+      path: /language/cpp/
+    - title: "Containerize your app"
+      path: /language/cpp/containerize/
+    - title: "Develop your app"
+      path: /language/cpp/develop/
+    - title: "Configure CI/CD"
+      path: /language/cpp/configure-ci-cd/
+    - title: "Test your deployment"
+      path: /language/cpp/deploy/
   - sectiontitle: Rust
     section:
     - title: "Overview"
@@ -215,24 +227,6 @@ Guides:
       title: Suppress CVEs with VEX
     - path: /guides/use-case/databases/
       title: Use containerized databases
-
-
-- sectiontitle: Develop with Docker
-  section:
-  - path: /develop/
-    title: Overview
-  - path: /develop/dev-best-practices/
-    title: Development best practices
-  - sectiontitle: Dockerfile best practices
-    section:
-    - path: /develop/develop-images/dockerfile_best-practices/
-      title: Overview
-    - path: /develop/develop-images/guidelines/
-      title: General guidelines
-    - path: /develop/develop-images/instructions/
-      title: Best practices for Dockerfile instructions
-  - path: /develop/security-best-practices/
-    title: Security best practices
 
 - sectiontitle: Build with Docker
   section:
@@ -1470,7 +1464,7 @@ Manuals:
     - path: /engine/install/fedora/
       title: Fedora
     - path: /engine/install/rhel/
-      title: RHEL (s390x)
+      title: RHEL
     - path: /engine/install/sles/
       title: SLES
     - path: /engine/install/ubuntu/
@@ -1825,6 +1819,8 @@ Manuals:
           title: Multi-stage builds
         - path: /build/building/variables/
           title: Variables
+        - path: /build/building/best-practices/
+          title: Best practices
         - path: /build/building/multi-platform/
           title: Multi-platform images
         - path: /build/building/secrets/
@@ -1949,6 +1945,8 @@ Manuals:
           section:
           - path: /build/ci/github-actions/
             title: Introduction
+          - path: /build/ci/github-actions/build-summary/
+            title: Build summary
           - path: /build/ci/github-actions/configure-builder/
             title: Configuring your builder
           - path: /build/ci/github-actions/multi-platform/
@@ -2235,6 +2233,8 @@ Manuals:
     title: Overview
   - sectiontitle: Docker Core billing
     section:
+    - path: /billing/core-billing/get-started-core/
+      title: Get started with Docker Core
     - path: /billing/core-billing/payment-method/
       title: Add or update a payment method
     - path: /billing/core-billing/details/

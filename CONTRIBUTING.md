@@ -1,5 +1,6 @@
 # Contributing to Docker Documentation
 
+
 We value documentation contributions from the Docker community. We'd like to
 make it as easy as possible for you to work in this repository.
 

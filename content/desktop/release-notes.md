@@ -1,3 +1,4 @@
+
 ---
 description: Find the Docker Desktop release notes for Mac, Linux, and Windows.
 keywords: Docker desktop, release notes, linux, mac, windows

@@ -1,3 +1,4 @@
+
 ---
 title: Docker Scout release notes
 description: Learn about the latest features of Docker Scout

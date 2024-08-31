@@ -1,3 +1,4 @@
+
 ---
 title: Install Docker Scout
 description: Installation instructions for the Docker Scout CLI plugin

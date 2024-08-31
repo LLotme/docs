@@ -1,3 +1,4 @@
+
 ---
 description: Learn what the Docker Verified Publisher Program is and how it works
 title: Docker Verified Publisher Program

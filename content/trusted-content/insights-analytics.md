@@ -7,6 +7,7 @@ aliases:
 - /docker-hub/insights-analytics/
 ---
 
+
 Insights and analytics provides usage analytics for Docker Verified
 Publisher (DVP) and Docker-Sponsored Open Source (DSOS) images on Docker Hub. This includes self-serve access to image and extension usage metrics for a desired time span. You can also display the number of image pulls by tag or by digest, and get breakdowns by geolocation, cloud provider, client, and more.
 

@@ -1,3 +1,4 @@
+
 ---
 description: Learn how to set up SSO in your IdP and take the next steps for enabling SSO.
 keywords: configure, sso, docker hub, hub, docker admin, admin, security

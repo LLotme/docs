@@ -8,6 +8,7 @@ aliases:
 - /faq/security/single-sign-on/idp-faqs/
 ---
 
+
 ### Is it possible to use more than one IdP with Docker SSO?
 
 No. You can only configure Docker SSO to work with a single IdP. A domain can only be associated with a single IdP. Docker supports Entra ID (formerly Azure AD) and identity providers that support SAML 2.0.

@@ -1,3 +1,4 @@
+
 ---
 description: Integrate Azure Container Registry with Docker Scout
 keywords: docker scout, acr, azure, integration, image analysis, security, cves

@@ -1,3 +1,4 @@
+
 ---
 description: Find the latest recommended version of the Docker Compose file format
   for defining multi-container applications.

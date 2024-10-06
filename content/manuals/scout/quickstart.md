@@ -1,4 +1,4 @@
----
+--- 
 title: Docker Scout quickstart
 linkTitle: Quickstart
 weight: 20

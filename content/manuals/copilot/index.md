@@ -1,7 +1,7 @@
 ---
 title: Docker for GitHub Copilot
 linkTitle: Docker for GitHub Copilot
-params:
+params: 
   sidebar:
     badge:
       color: violet
